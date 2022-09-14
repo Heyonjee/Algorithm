@@ -14,22 +14,14 @@ public class Main01 {
 		
 		
 		
-		
-		
-		
-		//Welcome�� ���� ���ó�� ����ϴ� ���α׷��� �ۼ��Ͻÿ�.
+		//Welcome을 예제 출력처럼 출력하는 프로그램을 작성하시오.
 				
 		System.out.println(".  .   .");
 		System.out.println("|  | _ | _. _ ._ _  _");
 		System.out.println("|/\\|(/.|(_.(_)[ | )(/.");
 				
-			
-						
 				
 				
-				
-
-		
 	}
 
 }
