@@ -10,18 +10,18 @@ public class Main01 {
 		
 		// Hello World!를 출력하시오.
 		
-		System.out.println("Hello World!");	
-		
+//		System.out.println("Hello World!");	
+//		
 		
 		
 		
 		
 		//Welcome을 예제 출력처럼 출력하는 프로그램을 작성하시오.
 				
-		System.out.println(".  .   .");
-		System.out.println("|  | _ | _. _ ._ _  _");
-		System.out.println("|/\\|(/.|(_.(_)[ | )(/.");
-		
+//		System.out.println(".  .   .");
+//		System.out.println("|  | _ | _. _ ._ _  _");
+//		System.out.println("|/\\|(/.|(_.(_)[ | )(/.");
+//		
 		
 		
 		
@@ -32,19 +32,19 @@ public class Main01 {
 		 */
 		
 		Scanner sc = new Scanner(System.in);
-		int score = sc.nextInt();
-		
-		if(score>=90) {
-			System.out.println("A");
-		}else if(score>=80) {
-			System.out.println("B");
-		}else if(score>=70) {
-			System.out.println("C");
-		}else if(score>=60) {
-			System.out.println("D");
-		}else {
-			System.out.println("F");
-		}
+//		int score = sc.nextInt();
+//		
+//		if(score>=90) {
+//			System.out.println("A");
+//		}else if(score>=80) {
+//			System.out.println("B");
+//		}else if(score>=70) {
+//			System.out.println("C");
+//		}else if(score>=60) {
+//			System.out.println("D");
+//		}else {
+//			System.out.println("F");
+//		}
 				
 		  
 		
@@ -54,19 +54,19 @@ public class Main01 {
 		 * 윤년은 연도가 4의 배수이면서 100의 배수가 아닐 때 또는 400의 배수일 때이다.
 		 */
 		
-		int a = sc.nextInt();
-		if(a%4==0) {
-			if(a%400==0) {
-				System.out.println(1);
-				
-			}else if(a%100==0) {
-				System.out.println(0);
-				
-			}else {
-				System.out.println(1);
-			}
-		}else
-			System.out.println(0);
+//		int a = sc.nextInt();
+//		if(a%4==0) {
+//			if(a%400==0) {
+//				System.out.println(1);
+//				
+//			}else if(a%100==0) {
+//				System.out.println(0);
+//				
+//			}else {
+//				System.out.println(1);
+//			}
+//		}else
+//			System.out.println(0);
 		
 		
 		
@@ -77,24 +77,24 @@ public class Main01 {
 		 * 단, x좌표와 y좌표는 모두 양수나 음수라고 가정한다.
 		 */
 		
-		int x, y =0;
-		x = sc.nextInt();
-		y = sc.nextInt();
-		
-		if(x>0) {
-			if(y>0) {
-				System.out.println(1);
-			}else {
-				System.out.println(4);
-			}
-		}else {
-			if(y<0) {
-				System.out.println(3);
-			}else {
-				System.out.println(2);
-			}
-		}
-		
+//		int x, y =0;
+//		x = sc.nextInt();
+//		y = sc.nextInt();
+//		
+//		if(x>0) {
+//			if(y>0) {
+//				System.out.println(1);
+//			}else {
+//				System.out.println(4);
+//			}
+//		}else {
+//			if(y<0) {
+//				System.out.println(3);
+//			}else {
+//				System.out.println(2);
+//			}
+//		}
+//		
 		
 		/*
 		 * "45분 일찍 알람 설정하기"이다. 원래 설정되어 있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 
@@ -103,22 +103,93 @@ public class Main01 {
 		 * 45분 일찍 알람 설정하기 방법을 사용할때 설정해야 하는 알람 시간을 출력한다.
 		 */
 		
-		int h, m =0;
-		h = sc.nextInt();
-		m = sc.nextInt();
+//		int h, m =0;
+//		h = sc.nextInt();
+//		m = sc.nextInt();
+//		
+//		
+//		if(m>=45) {
+//			System.out.println(h+" "+(m-45));
+//		}else {
+//			if(h==0) {
+//				h=23;
+//			}else{
+//				h=h-1;
+//			}
+//			System.out.println(h+" "+(m+15));
+//			
+//		}
 		
 		
-		if(m>=45) {
-			
-			if(h==0) {
-				h=23;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		 * 1에서부터 6까지의 눈을 가진 3개의 주사위를 던져서 다음과 같은 규칙에 따라 상금을 받는 게임이 있다.
+		 * 같은 눈이 3개가 나오면 10,000원+(같은 눈)×1,000원의 상금을 받게 된다.
+		 * 같은 눈이 2개만 나오는 경우에는 1,000원+(같은 눈)×100원의 상금을 받게 된다.
+		 * 모두 다른 눈이 나오는 경우에는 (그 중 가장 큰 눈)×100원의 상금을 받게 된다.
+		 * 3개 주사위의 나온 눈이 주어질 때, 상금을 계산하는 프로그램을 작성 하시오.
+		 */
+		
+		int d1, d2, d3 = 0;
+		
+		
+		d1 = sc.nextInt();
+		d2 = sc.nextInt();
+		d3 = sc.nextInt();
+		
+		sc.close();
+		
+		if(d1!=d2 && d2!=d3 && d1!=d3) {
+			int max;
+			if(d1>d2) {
+				if(d3>d1) {
+					max=d3;
+				}else {
+					max=d1;
+				}
+			}else {
+				if(d3>d2) {
+					max=d3;
+				}else {
+					max=d2;
+				}
 			}
-			System.out.println(h +" "+ (m-45));
+			System.out.println(max*100);
 			
 		}else {
-			System.out.println((h-1)+" "+(m+15));
-			
+			if(d1==d2 && d2==d3) {
+				System.out.println(10000+d1*1000);
+			}else {
+				if(d1==d2 || d1==d3) {
+					System.out.println(1000+d1*100);
+				}else {
+					System.out.println(1000+d2*100);
+				}
+			}
 		}
+		
+		
+				
+		
 		
 		
 		
