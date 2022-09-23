@@ -10,18 +10,18 @@ public class Main01 {
 		
 		// Hello World!를 출력하시오.
 		
-//		System.out.println("Hello World!");	
-//		
+		System.out.println("Hello World!");	
+		
 		
 		
 		
 		
 		//Welcome을 예제 출력처럼 출력하는 프로그램을 작성하시오.
 				
-//		System.out.println(".  .   .");
-//		System.out.println("|  | _ | _. _ ._ _  _");
-//		System.out.println("|/\\|(/.|(_.(_)[ | )(/.");
-//		
+		System.out.println(".  .   .");
+		System.out.println("|  | _ | _. _ ._ _  _");
+		System.out.println("|/\\|(/.|(_.(_)[ | )(/.");
+		
 		
 		
 		
@@ -32,19 +32,19 @@ public class Main01 {
 		 */
 		
 		Scanner sc = new Scanner(System.in);
-//		int score = sc.nextInt();
-//		
-//		if(score>=90) {
-//			System.out.println("A");
-//		}else if(score>=80) {
-//			System.out.println("B");
-//		}else if(score>=70) {
-//			System.out.println("C");
-//		}else if(score>=60) {
-//			System.out.println("D");
-//		}else {
-//			System.out.println("F");
-//		}
+		int score = sc.nextInt();
+		
+		if(score>=90) {
+			System.out.println("A");
+		}else if(score>=80) {
+			System.out.println("B");
+		}else if(score>=70) {
+			System.out.println("C");
+		}else if(score>=60) {
+			System.out.println("D");
+		}else {
+			System.out.println("F");
+		}
 				
 		  
 		
@@ -54,19 +54,19 @@ public class Main01 {
 		 * 윤년은 연도가 4의 배수이면서 100의 배수가 아닐 때 또는 400의 배수일 때이다.
 		 */
 		
-//		int a = sc.nextInt();
-//		if(a%4==0) {
-//			if(a%400==0) {
-//				System.out.println(1);
-//				
-//			}else if(a%100==0) {
-//				System.out.println(0);
-//				
-//			}else {
-//				System.out.println(1);
-//			}
-//		}else
-//			System.out.println(0);
+		int a = sc.nextInt();
+		if(a%4==0) {
+			if(a%400==0) {
+				System.out.println(1);
+				
+			}else if(a%100==0) {
+				System.out.println(0);
+				
+			}else {
+				System.out.println(1);
+			}
+		}else
+			System.out.println(0);
 		
 		
 		
@@ -77,24 +77,25 @@ public class Main01 {
 		 * 단, x좌표와 y좌표는 모두 양수나 음수라고 가정한다.
 		 */
 		
-//		int x, y =0;
-//		x = sc.nextInt();
-//		y = sc.nextInt();
-//		
-//		if(x>0) {
-//			if(y>0) {
-//				System.out.println(1);
-//			}else {
-//				System.out.println(4);
-//			}
-//		}else {
-//			if(y<0) {
-//				System.out.println(3);
-//			}else {
-//				System.out.println(2);
-//			}
-//		}
-//		
+		int x, y =0;
+		x = sc.nextInt();
+		y = sc.nextInt();
+		
+		if(x>0) {
+			if(y>0) {
+				System.out.println(1);
+			}else {
+				System.out.println(4);
+			}
+		}else {
+			if(y<0) {
+				System.out.println(3);
+			}else {
+				System.out.println(2);
+			}
+		}
+		
+		
 		
 		/*
 		 * "45분 일찍 알람 설정하기"이다. 원래 설정되어 있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 
@@ -103,44 +104,48 @@ public class Main01 {
 		 * 45분 일찍 알람 설정하기 방법을 사용할때 설정해야 하는 알람 시간을 출력한다.
 		 */
 		
-//		int h, m =0;
-//		h = sc.nextInt();
-//		m = sc.nextInt();
-//		
-//		
-//		if(m>=45) {
-//			System.out.println(h+" "+(m-45));
-//		}else {
-//			if(h==0) {
-//				h=23;
-//			}else{
-//				h=h-1;
-//			}
-//			System.out.println(h+" "+(m+15));
-//			
-//		}
+		int h, m =0;
+		h = sc.nextInt();
+		m = sc.nextInt();
+		
+		
+		if(m>=45) {
+			System.out.println(h+" "+(m-45));
+		}else {
+			if(h==0) {
+				h=23;
+			}else{
+				h=h-1;
+			}
+			System.out.println(h+" "+(m+15));
+			
+		}
 		
 		
 		
 		
 		
+		/*
+		 * 인공지능 오븐은 오븐구이가 끝나는 시간을 분 단위로 자동적으로 계산한다. 인공지능 오븐 앞면에는 사용자에게 훈제오리구이 요리가 끝나는 시각을 알려 주는 디지털 시계가 있다.
+		 * 훈제오리구이를 시작하는 시각과 오븐구이를 하는 데 필요한 시간이 분단위로 주어졌을 때, 오븐구이가 끝나는 시각을 계산하는 프로그램을 작성하시오.
+		 */
+		int th, tm , t= 0;
+		th = sc.nextInt();
+		tm = sc.nextInt();
+		t = sc.nextInt();
+		
+		int min = 60*th+tm;
+		min += t;
+		
+		int hour = (min/60)%24;
+		int minute= min%60;
+		
+		System.out.println(hour+" "+minute);
+	
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		/*
 		 * 1에서부터 6까지의 눈을 가진 3개의 주사위를 던져서 다음과 같은 규칙에 따라 상금을 받는 게임이 있다.
 		 * 같은 눈이 3개가 나오면 10,000원+(같은 눈)×1,000원의 상금을 받게 된다.
