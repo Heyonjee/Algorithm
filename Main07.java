@@ -18,21 +18,31 @@ public class Main07 {
 		 */
 		
 		Scanner sc = new Scanner(System.in);
-		 int n = sc.nextInt();
-		 int arr[]=new int[n];
+		 int c = sc.nextInt();
+		 int arr[]=new int[c];
 		 
-		 for(int i=0; i<n; i++) {
+		 for(int i=0; i<c; i++) {
 			 int a = sc.nextInt();
 			 int b = sc.nextInt();
 			 arr[i] = a+b;
 		 }
 		 
-		 sc.close();
+		
 		 
 		 for(int t : arr) {
 			 System.out.println(t);
 		 }
 		
+		 
+		 //n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
+		 int n = sc.nextInt();
+		 int sum=0;
+		 sc.close();
+		 
+		 for(int i=1; i<=n; i++) {
+			 sum +=i;
+		 }
+		 System.out.println(sum);
 		
 	}
 
