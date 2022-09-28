@@ -1,11 +1,16 @@
 package test;
 
+import java.util.Scanner;
+
 public class Main06 {
 
 	
 		
-		//정수 n개가 주어졌을 때, n개의 합을 구하는 함수를 작성하시오.
-		long sum(int[] a) {
+		/*
+		 * <문제>
+		 * 정수 n개가 주어졌을 때, n개의 합을 구하는 함수를 작성하시오.
+		 */
+			long sum(int[] a) {
 			long sum=0;
 			
 			for(int i = 0; i<a.length; i++) {
@@ -19,6 +24,7 @@ public class Main06 {
 		
 		
 		/*
+		 * <문제>
 		 * 셀프 넘버는 1949년 인도 수학자 D.R. Kaprekar가 이름 붙였다. 양의 정수 n에 대해서 d(n)을 n과 n의 각 자리수를 더하는 함수라고 정의하자.
 		 * 예를 들어, d(75) = 75+7+5 = 87이다. 양의 정수 n이 주어졌을 때, 이 수를 시작해서 n, d(n), d(d(n)), d(d(d(n))), ...과 같은 무한 수열을 만들 수 있다.
 		 * 예를 들어, 33으로 시작한다면 다음 수는 33 + 3 + 3 = 39이고, 그 다음 수는 39 + 3 + 9 = 51, 다음 수는 51+ 5 + 1 = 57이다.
@@ -29,9 +35,9 @@ public class Main06 {
 		public static int d(int num) {
 			int sum = num;
 			
-			while(num !=0) {
-				sum=sum+(num%10); 
-				num=num/10;
+			while(num !=0) {       // => 0이 아닐때까지 반복
+				sum=sum+(num%10);  // => 첫째 자리의 수
+				num=num/10;        // => 10으로 나누어 첫째 자리의 수 없애기
 				
 			}
 			return sum;
