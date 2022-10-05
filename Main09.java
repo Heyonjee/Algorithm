@@ -29,10 +29,36 @@ public class Main09 {
 			StringTokenizer st=new StringTokenizer(br.readLine()+" "); //공백단위로 끊어서 처리
 			bw.write((Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken()))+"\n"); //개행처리
 		}
-		br.close();
+		
 		
 		bw.flush(); //남은 데이터 모두 출력
-		bw.close();
+		
+		
+		
+		
+		/*
+		 * <문제> 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는다.
+		 * 첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.
+		 * 첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.
+		 */
+		int n = Integer.parseInt(br.readLine());
+		
+		br.close();
+		
+		for(int i=1; i<=n; i++) {     //이중 for문 사용
+			for(int j=1; j<=i; j++) {
+				bw.write("*");
+			}
+			
+			bw.newLine(); //줄바꿈
+		}	
+			bw.flush();
+			bw.close();
+		
 	}
+	
+	
+	
+	
 
 }
