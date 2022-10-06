@@ -39,11 +39,11 @@ public class Main09 {
 		/*
 		 * <문제> 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는다.
 		 * 첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.
-		 * 첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.
+		 * 첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.  =>BufferedReader와 BufferedWriter 사용하기
 		 */
 		int n = Integer.parseInt(br.readLine());
 		
-		br.close();
+		
 		
 		for(int i=1; i<=n; i++) {     //이중 for문 사용
 			for(int j=1; j<=i; j++) {
@@ -53,7 +53,34 @@ public class Main09 {
 			bw.newLine(); //줄바꿈
 		}	
 			bw.flush();
-			bw.close();
+			
+			
+			
+		
+			
+		/*
+		 * <문제> 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 출력한다.
+		 * 단, 오른쪽을 기준으로 별을 정렬하고 첫째줄부터 N번째 줄까지 차례대로 별을 출력한다. => BufferedReader와 System.out.print() 사용하기
+		 */
+			
+			
+		int m = Integer.parseInt(br.readLine());
+		
+		br.close();
+		
+		for(int i=1; i<=m; i++) {  //다중 for문 사용
+			for(int j=1; j<=m-i; j++) {
+				System.out.print(" "); //한 행에 찍어야하기 때문에 print
+			}
+			for(int k=1; k<=i; k++) {
+				System.out.print("*"); //한 행에 찍어야하기 때문에 print
+			}
+			System.out.println();  //한 행의 출력이 끝났기 때문에 줄바꿔줌	
+		}
+		
+		bw.close();
+			
+			
 		
 	}
 	
