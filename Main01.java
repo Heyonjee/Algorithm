@@ -1,5 +1,6 @@
 package test;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Main01 {
@@ -228,6 +229,26 @@ public class Main01 {
 			}else {
 				System.out.println("No");
 			}
+			
+			
+			
+			
+			/*
+			 * <문제>
+			 * 두 정수 num1과 num2를 입력받은 다음, num1+num2를 출력하는 프로그램을 작성하시오.
+			 * 첫째 줄에 num1과 num2가 주어진다. (0 < num1, num2  < 1010000)
+			 * 첫째 줄에 num1+num2를 출력한다.
+			 */
+			
+			//스캐너 선언
+			
+			//biginteger로 큰 정수 받기 => biginteger는 문자열을 반환함
+			BigInteger num1 = sc.nextBigInteger();
+			BigInteger num2 = sc.nextBigInteger();
+			
+			System.out.println(num1.add(num2));
+			
+			
 		}
 	
 	}
