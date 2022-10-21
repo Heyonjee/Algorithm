@@ -27,6 +27,32 @@ public class Main16 {
 		for(int a:arr) {
 			System.out.println(a);
 		}
+
+
+
+
+		/*
+		 * <문제>
+		 * 정수 M이 주어졌을 때, 소인수분해하는 프로그램을 작성하시오. 첫째 줄에 정수 M (1 ≤ M ≤ 10,000,000)이 주어진다.
+		 * M의 소인수분해 결과를 한 줄에 하나씩 오름차순으로 출력한다. M이 1인 경우 아무것도 출력하지 않는다.
+		 */
+		
+		int m = sc.nextInt();
+		
+		for(int i=2; i<=m; i++) {
+			while(m%i==0) {
+				System.out.println(i);
+				m=m/i;  //연산기호  => m/=i
+			}
+			
+		}
+		if(m!=1) {
+			System.out.println(m);
+		}
+		
+		
+		
+		
 	}
 
 }
