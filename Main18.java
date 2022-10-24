@@ -1,6 +1,7 @@
 package test;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main18 {
 
@@ -50,7 +51,30 @@ public class Main18 {
 			System.out.println(y+x);
 		}
 			
-			
+		
+		String none=sc.nextLine(); // => 문제풀이 코드와는 상관없음!!
+								   //문제 2개를 하나의 class에 풀이하였기에 다음 문제의 값을 입력받기 전 Enter를 입력받고 각각의 문제가 올바르게 출력되게 하기 위함.
+		
+		/*
+		 * <문제>
+		 * 영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오.
+		 * 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.
+		 * 첫 줄에 영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열의 길이는 1,000,000을 넘지 않는다.
+		 * 단어는 공백 한 개로 구분되며, 공백이 연속해서 나오는 경우는 없다. 또한 문자열은 공백으로 시작하거나 끝날 수 있다.
+		 * 첫째 줄에 단어의 개수를 출력한다.
+		 */
+		String str=sc.nextLine(); // => 공백이 포함된 문자열 받을 때
+		
+		StringTokenizer st=new StringTokenizer(str," "); //입력받은 문자열을 공백을 기준으로 나눈 토큰들을 저장
+		
+		System.out.println(st.countTokens()); //토큰의 개수를 리턴
+		
+		
+		
+		
+		
+		
+		
 	}
 			
 			
