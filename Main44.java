@@ -21,19 +21,24 @@ public class Main44 {
 		
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		
-		for(int i=0; i<3; i++) {
-			BigInteger s = new BigInteger("0");
-			int n = Integer.parseInt(br.readLine());
+		for(int i=0; i<3; i++) { //숫자가 커서 BigInteger에 담아야함
+			
+			BigInteger s = new BigInteger("0"); //정수들의 합
+			
+			int n = Integer.parseInt(br.readLine()); //BigInteger는 형변환을 반드시 해줘야함
 			
 			for(int j=0; j<n; j++) {
-				BigInteger n2 = new BigInteger(br.readLine());
-				s=s.add(n2);
+				BigInteger num = new BigInteger(br.readLine());
+				s=s.add(num); //BigInteger는 별도의 사칙연산 함수 사용
 			}
 			
-			//compareTo(0)이 -1이면 음수, 1이면 양수, 0이면 0 
-			if(s.compareTo(BigInteger.ZERO)==-1) {
+			//compareTo() : 기준값.compareTo(비교값)
+			// 기준값=비교값--->0을 반환
+			// 기준값>비교값--->1을 반환
+			// 기준값<비교값--->-1을 반환
+			if(s.compareTo(new BigInteger("0"))==-1) {
 				System.out.println("-");
-			}else if(s.compareTo(BigInteger.ZERO)==1) {
+			}else if(s.compareTo(new BigInteger("0"))==1) {
 				System.out.println("+");
 			}else {
 				System.out.println(0);
