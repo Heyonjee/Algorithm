@@ -3,6 +3,9 @@ package test;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Main66 {
 
@@ -24,6 +27,24 @@ public class Main66 {
 			sum=sum+Integer.parseInt(br.readLine()); //int형으로 형변환
 		}
 		System.out.println(sum);
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		 * <문제>
+		 * 서울의 오늘 날짜를 출력하는 프로그램을 작성하시오.
+		 * 서울의 오늘 날짜를 "YYYY-MM-DD" 형식으로 출력한다.
+		 */
+		SimpleDateFormat day=new SimpleDateFormat("yyyy-MM-dd"); //날짜데이터 형식변환
+		
+		Date today=new Date(); //날짜변수 선언
+		System.out.println(day.format(today)); //변환된 형식에 날짜값 담기
+		
 	}
 
 }
