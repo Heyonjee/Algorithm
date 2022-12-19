@@ -19,6 +19,26 @@ public class Main68 {
 		BigInteger a= sc.nextBigInteger(); //큰 수이기 때문에 BigInteger사용
 		BigInteger b= sc.nextBigInteger();
 		System.out.println(a.add(b)); //a+b 출력
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		 * <문제> 
+		 * Print out the word Hook as shown below.
+		 */
+		System.out.println("#  # #### #### #  #");
+		System.out.println("#### #  # #  # # #");
+		System.out.println("#### #  # #  # # #");
+		System.out.println("#  # #### #### #  #");
+		
 	}
 
 }
